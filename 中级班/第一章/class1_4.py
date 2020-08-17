@@ -1,0 +1,16 @@
+from 中级班.第一章.class1_3 import MyCache
+testCache = MyCache(k=0)
+testCache.set(('a', 1))
+testCache.set(('b', 2))
+testCache.set(('c', 3))
+print(testCache.get(('a')))
+testCache.set(('d', 4))
+print(testCache.get(('a')))
+print(testCache.get('b'))
+print(testCache.get('c'))
+print(testCache.get('d'))
+testCache.set(('b', 2))
+print(testCache.get(('a')))
+testCache.set(('c', 5))
+print(testCache.get('c'))
+
